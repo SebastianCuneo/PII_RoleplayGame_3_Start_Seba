@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace Ucu.Poo.RoleplayGame;
 
-public class Wizard: IMagicCharacter
+public class Wizard: IMagicCharacter, IHero
 {
     private int health = 100;
 
@@ -109,4 +109,11 @@ public class Wizard: IMagicCharacter
         this.magicalItems.Remove(item);
     }
 
+
+    public int VictoryPoints { get; set; }
+    
+    public void GainVictoryPoints(int points)
+    {
+        VictoryPoints += points;
+    }
 }

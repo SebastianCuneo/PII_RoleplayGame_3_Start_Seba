@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 namespace Ucu.Poo.RoleplayGame;
 
-public class Archer: ICharacter
+public class Archer: ICharacter, IHero
 {
     private int health = 100;
 
