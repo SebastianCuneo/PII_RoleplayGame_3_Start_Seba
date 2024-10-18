@@ -38,7 +38,7 @@ public class Knight: ICharacter, IHero
     {
         get
         {
-            int value = 0;
+             int value = 0;
             foreach (IItem item in this.items)
             {
                 if (item is IDefenseItem)
