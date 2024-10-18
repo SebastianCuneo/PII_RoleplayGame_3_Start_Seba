@@ -83,4 +83,11 @@ public class Archer: ICharacter, IHero
     {
         this.items.Remove(item);
     }
+    
+    public int VictoryPoints { get; set; }
+
+    public void GainVictoryPoints(int points)
+    {
+        VictoryPoints += points;
+    }
 }

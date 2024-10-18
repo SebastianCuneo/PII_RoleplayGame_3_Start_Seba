@@ -13,7 +13,7 @@ public class Ogre: ICharacter, IEnemy
         get { return this.items.AsReadOnly(); }
     }
     
-    public Orge (string name)
+    public Ogre (string name)
     {
         this.Name = name;
 
